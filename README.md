@@ -22,7 +22,7 @@ Statusfiles can be written in JSON or YAML.
 Statusfiles __must__ contain at least these two key/value pairs:
 
 |Key|Value|Description|
-|-|-|-|
+|---|---|---|
 |`id`|string|A short, unique (to your universe) descriptor of the thing.|
 |`status`|string|The current status of the thing. Programs will/should use this value to determine whether the status of a thing has been updated.
 
@@ -31,7 +31,7 @@ Statusfiles __must__ contain at least these two key/value pairs:
 Statusfiles __can__ also contain these key/value pairs:
 
 |Key|Value|Description|
-|-|-|-|
+|---|---|---|
 |`name`|string|A longer name for the thing.|
 |`description`|string|A description of what this status-tracker tracks, and how.|
 |`updated_at`|[ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) timestamp|The most recent time that `status` was updated (i.e., changed).|
