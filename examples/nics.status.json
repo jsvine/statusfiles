@@ -3,7 +3,6 @@
     "name": "Latest NICS Monthly Report",
     "status": "2016-02",
     "updated_at": "2016-03-18T05:30:00+00:00",
-    "checked_at": "2016-03-19T03:30:00+00:00",
     "description": "Extracted from https://www.fbi.gov/about-us/cjis/nics/reports/active_records_in_the_nics-index.pdf",
     "data": {
         "total_checks": 2613074,

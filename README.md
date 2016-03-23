@@ -33,10 +33,10 @@ Statusfiles __can__ also contain these key/value pairs:
 |Key|Value|Description|
 |---|---|---|
 |`name`|string|A longer name for the thing.|
+|`status_long`|string|A longer description of the status. Statusfile-readers should *not* use this value to determine whether the status has changed.|
 |`description`|string|A description of what this status-tracker tracks, and how.|
-|`updated_at`|[ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) timestamp|The most recent time that `status` was updated (i.e., changed).|
-|`checked_at`|[ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) timestamp|The most recent time that `status` was checked for possible updates.|
-|`data`|key/value dictionary|An arbitrarily-structured dictionary of additional data associated with the current status.|
+|`updated_at`|[ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) timestamp|The most recent time that `status` was updated (though not necessarily changed).|
+|`data`|any JSON/YAML-friendly data structure|Additional data associated with the current status.|
 
 ### Example
 
@@ -48,7 +48,6 @@ As JSON:
     "name": "Latest NICS Monthly Report",
     "status": "2016-02",
     "updated_at": "2016-03-18T05:30:00+00:00",
-    "checked_at": "2016-03-19T03:30:00+00:00",
     "description": "Extracted from https://www.fbi.gov/about-us/cjis/nics/reports/active_records_in_the_nics-index.pdf",
     "data": {
         "total_checks": 2613074,
@@ -64,7 +63,6 @@ id: latest-nics-report
 name: Latest NICS Monthly Report
 status: 2016-02
 updated_at: 2016-03-18T05:30:00+00:00
-checked_at: 2016-03-19T03:30:00+00:00
 description: >
     Extracted from https://www.fbi.gov/about-us/cjis/nics/reports/active_records_in_the_nics-index.pdf
 data:
