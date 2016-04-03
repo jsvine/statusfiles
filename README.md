@@ -6,7 +6,7 @@ A __simple, standardized, technology-agnostic__ format for representing the __st
 - [Format](#format)
 - [Infrastructure](#infrastructure)
 - [Use-Case Ideas](#use-case-ideas)
-- [Questions](#questions)
+- [Feedback](#feedback)
 
 ## Motivation
 
@@ -83,11 +83,6 @@ Statusfiles can represent the status of *anything*, but here are a few ideas:
 - __Sports team records__. A statusfile could track the win/loss record of a team; ideal for casual fans. Or a higher-activity statusfile could track the score of that team's current/most-recent game.
 - __Flight statuses__. Could help you know when/if your flight is delayed.
 
-## Questions
+## Feedback
 
-- Does this idea even make sense?
-- Are there better, pre-existing approaches?
-- Could the format/spec be improved?
-- Other ideas/improvements?
-
-Have feedback? [File an issue](https://github.com/jsvine/statusfiles/issues/new) or email me at [jsvine@gmail.com](mailto:jsvine@gmail.com).
+Does this idea make sense? Are there better, pre-existing approaches? Could the format/spec be improved? If you have feedback, please [file an issue](https://github.com/jsvine/statusfiles/issues/new) or email me at [jsvine@gmail.com](mailto:jsvine@gmail.com).
