@@ -1,6 +1,6 @@
-# IDEA: Statusfiles
+# Idea: Statusfiles
 
-A __simple, structured, standardized, technology-agnostic__ way to represent the __status of things__.
+A __simple, standardized, technology-agnostic__ format for representing the __status of things__.
 
 - [Motivation](#motivation)
 - [Format](#format)
@@ -9,9 +9,13 @@ A __simple, structured, standardized, technology-agnostic__ way to represent the
 
 ## Motivation
 
-For the past few months, I've been using [BitBar](https://github.com/matryer/bitbar) to keep track data and documents that change on a semi-regular basis. For instance, I use it to automatically check for the FBI's National Instant Criminal Background Check System's [latest monthly reports](https://github.com/BuzzFeedNews/nics-firearm-background-checks).
+News, you might say, is when something changes. That's a horrendously oversimplified definition, but contains a kernel of practical truth: People want to know when something important changes. That simple desire involves three basic steps:
 
-BitBar is a great, quick solution for building these kinds of status-minders. But, as I script more of them, the mismatch between BitBar's intended usage and my goals — especially re. task-scheduling, output formatting, and message delivery — is becoming clearer. I've come to realize that what I really want is a __simple, structured, standardized, technology-agnostic__ way to represent the __status of things__.
+1. Knowing the status of the thing
+2. Figuring out when that status changes
+3. Getting notified about those changes
+
+The idea of tracking changes isn't new; many websites, software, and companies provide the service. But each solution takes its own approach. And each solution typically bundles all of the three steps above into a single, non-transferable toolset. Statusfiles aim to isolate, decentralize, and liberate that first step from the rest of the process. It could be the first step, I hope, of a modular ecosystem of change-tracking.
 
 ## Format
 
