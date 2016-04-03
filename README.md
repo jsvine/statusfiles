@@ -5,6 +5,7 @@ A __simple, standardized, technology-agnostic__ format for representing the __st
 - [Motivation](#motivation)
 - [Format](#format)
 - [Infrastructure](#infrastructure)
+- [Use-Case Ideas](#use-case-ideas)
 - [Questions](#questions)
 
 ## Motivation
@@ -72,6 +73,15 @@ Statusfiles, in practice, would occupy an intermediary layer between __statusfil
 
 Because statusfiles employ a simple, standardized format, statusfile-readers should be able to consume statusfiles written by any program.
 
+
+## Use-Case Ideas
+
+Statusfiles can represent the status of *anything*, but here are a few ideas:
+
+- __Website changes__. The motivating example for me. A simple statusfile-writer could help identify when an important part of a webpage changes.
+- __Service outages__. A statusfile could represent the availability of a popular service (e.g., Twitter) or crucial API.
+- __Sports team records__. A statusfile could track the win/loss record of a team; ideal for casual fans. Or a higher-activity statusfile could track the score of that team's current/most-recent game.
+- __Flight statuses__. Could help you know when/if your flight is delayed.
 
 ## Questions
 
