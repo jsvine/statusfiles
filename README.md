@@ -64,11 +64,14 @@ Here's what a statusfile tracking the most recent monthly report available from 
 
 ## Infrastructure
 
-At the heart of this ideas is that any technology should be able to *easily* read and write statusfiles.
+Statusfiles, in practice, would occupy an intermediary layer between __statusfile-writers__ and __statusfile-readers__:
 
-Statusfiles could be stored locally, or hosted on the open web. They could be stored as flat files, or served dynamically.
+- Statusfile-writers identify the status of the thing — in most cases, likely via web-scraping or API calls — and write a statusfile to storage somewhere. That *somewhere* could be a local machine, the open web, or places in between. And statusfile-writers could be triggered on schedule (e.g., via `cron`), in response to an HTTP request, or via some other mechanism.
 
-Statusfile-readers — akin to RSS feed readers — could be built to check and track the files. Or you could write simple handlers for tools such as [Huginn](https://github.com/cantino/huginn/).
+- Statusfile-readers — akin to RSS feed readers — check and track statusfiles. When changes *are* detected, statusfile-readers could notify the user via email, SMS, desktop popup, or other means.
+
+Because statusfiles employ a simple, standardized format, statusfile-readers should be able to consume statusfiles written by any program.
+
 
 ## Questions
 
