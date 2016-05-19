@@ -30,7 +30,7 @@ Statusfiles __must__ contain at least these two key/value pairs:
 |---|---|---|
 |`id`|string|A short, unique (to your universe) descriptor of the thing.|
 |`status`|string|The current status of the thing. Statusfile-readers will/should use this value to determine whether the status of a thing has been updated.|
-|`updated_at`|[ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) timestamp|The most recent time that the statusfile was updated (though not necessarily changed).|
+|`checked_at`|[ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) timestamp|The most recent time that the statusfile-writer checked the source.|
 
 ### Optional Key/Value Pairs
 
@@ -41,6 +41,8 @@ Statusfiles __can__ also contain these key/value pairs:
 |`name`|string|A longer name for the thing.|
 |`status_text`|string|A longer description of the status. Statusfile-readers should *not* use this value to determine whether the status has changed.|
 |`description`|string|A description of what this status-tracker tracks, and how.|
+|`link`|string|A URL pointing to the relevant source.|
+|`updated_at`|[ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) timestamp|The most recent time that the status changed.|
 |`data`|any JSON-friendly data structure|Additional data associated with the current status.|
 
 
