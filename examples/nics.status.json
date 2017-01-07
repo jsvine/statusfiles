@@ -1,10 +1,9 @@
 {
-    "id": "latest-nics-report",
-    "name": "Latest NICS Monthly Report",
     "status": "2016-02",
-    "status_text": "February 2016",
+    "status_long": "February 2016 (2,613,074 total checks)",
+    "description": "Latest NICS Monthly Report",
+    "link": "https://www.fbi.gov/file-repository/nics_firearm_checks_-_month_year.pdf",
     "updated_at": "2016-03-18T05:30:00+00:00",
-    "description": "Extracted from https://www.fbi.gov/about-us/cjis/nics/reports/active_records_in_the_nics-index.pdf",
     "data": {
         "total_checks": 2613074,
         "year_over_year": "+40.5%"
